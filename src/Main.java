@@ -44,6 +44,18 @@ public class Main {
 		uj.setId(3L);
 		uj.setName("UJ");
 		uj.setAddress("ul. Go³êbia 24");
+		
+		SchoolClass hist = new SchoolClass();
+		hist.setId(4L);
+		hist.setProfile("historia");
+		hist.setCurrentYear(2);
+		hist.setStartYear(2015);
+		
+		SchoolClass biol = new SchoolClass();
+		biol.setId(5L);
+		biol.setProfile("biologia");
+		biol.setCurrentYear(4);
+		biol.setStartYear(2013);
 	
 		
 	}
