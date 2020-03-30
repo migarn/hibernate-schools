@@ -38,4 +38,13 @@ public class Main {
 			}
 		}
 	}
+	
+	private void addNewData() {
+		School uj = new School();
+		uj.setId(3L);
+		uj.setName("UJ");
+		uj.setAddress("ul. Go³êbia 24");
+	
+		
+	}
 }

@@ -35,6 +35,10 @@ public class School {
 	public Set<SchoolClass> getClasses() {
 		return classes;
 	}
+	
+	public void setClasses(Set<SchoolClass> classes) {
+		this.classes = classes;
+	}
 
 	public void setName(String name) {
 		this.name = name;
