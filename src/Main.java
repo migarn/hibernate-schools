@@ -1,4 +1,6 @@
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
@@ -74,5 +76,18 @@ public class Main {
 		s3.setName("Alina");
 		s3.setSurname("Bêben");
 		s3.setPesel("91871612853");
+		
+		Set<Student> histStudents = new HashSet<Student>();
+		histStudents.add(s1);
+		histStudents.add(s2);
+		hist.setStudents(histStudents);
+		
+		Set<Student> biolStudents = new HashSet<Student>();
+		biolStudents.add(s3);
+		biol.setStudents(biolStudents);
+		
+		Set<SchoolClass> ujClasses = new HashSet<SchoolClass>();
+		ujClasses.add(hist);
+		ujClasses.add(biol);
 	}
 }

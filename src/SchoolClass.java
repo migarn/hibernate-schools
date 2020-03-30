@@ -54,6 +54,10 @@ public class SchoolClass {
 	public Set<Student> getStudents() {
 		return students;
 	}
+	
+	public void setStudents(Set<Student> students) {
+		this.students = students;
+	}
 
 	public void setCurrentYear(int currentYear) {
 		this.currentYear = currentYear;
