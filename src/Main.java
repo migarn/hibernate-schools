@@ -57,6 +57,22 @@ public class Main {
 		biol.setCurrentYear(4);
 		biol.setStartYear(2013);
 	
+		Student s1 = new Student();
+		s1.setId(8L);
+		s1.setName("Anna");
+		s1.setSurname("Baran");
+		s1.setPesel("93451312354");
 		
+		Student s2 = new Student();
+		s2.setId(9L);
+		s2.setName("Jerzy");
+		s2.setSurname("Kowalik");
+		s2.setPesel("93851212551");
+		
+		Student s3 = new Student();
+		s3.setId(10L);
+		s3.setName("Alina");
+		s3.setSurname("Bêben");
+		s3.setPesel("91871612853");
 	}
 }
