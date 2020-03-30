@@ -4,6 +4,7 @@ import java.util.Set;
 
 import org.hibernate.Criteria;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 public class Main {
 
@@ -12,6 +13,7 @@ public class Main {
 	public static void main(String[] args) {
 		Main main = new Main();
 		main.printSchools();
+		main.addNewData();
 		main.close();
 	}
 
@@ -89,5 +91,9 @@ public class Main {
 		Set<SchoolClass> ujClasses = new HashSet<SchoolClass>();
 		ujClasses.add(hist);
 		ujClasses.add(biol);
+		
+		Transaction transaction = session.beginTransaction();
+		session.save(uj);
+		transaction.commit();
 	}
 }
