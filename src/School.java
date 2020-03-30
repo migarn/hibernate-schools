@@ -2,9 +2,10 @@ import java.util.Set;
 
 import javax.persistence.*;
 
+@SuppressWarnings("serial")
 @Entity
 @Table(name="schools")
-public class School {
+public class School implements java.io.Serializable {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

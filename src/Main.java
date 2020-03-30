@@ -13,7 +13,7 @@ public class Main {
 	public static void main(String[] args) {
 		Main main = new Main();
 		main.printSchools();
-		main.addNewData();
+		//main.addNewData();
 		main.close();
 	}
 
