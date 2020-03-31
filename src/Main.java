@@ -13,11 +13,8 @@ public class Main {
 	public static void main(String[] args) {
 		Main main = new Main();
 		main.printSchools();
-		main.addNewData();
+		//main.addNewData();
 		main.close();
-		
-//		School school = main.school();
-//		System.out.println(school.getClasses());
 	}
 
 	public Main() {
@@ -48,36 +45,36 @@ public class Main {
 	
 	private void addNewData() {
 		School uj = new School();
-		uj.setId(3L);
+		uj.setId(0);
 		uj.setName("UJ");
 		uj.setAddress("ul. Go³êbia 24");
 		
 		SchoolClass hist = new SchoolClass();
-		hist.setId(4L);
+		hist.setId(0);
 		hist.setProfile("historia");
 		hist.setCurrentYear(2);
 		hist.setStartYear(2015);
 		
 		SchoolClass biol = new SchoolClass();
-		biol.setId(5L);
+		biol.setId(0);
 		biol.setProfile("biologia");
 		biol.setCurrentYear(4);
 		biol.setStartYear(2013);
 	
 		Student s1 = new Student();
-		s1.setId(8L);
+		s1.setId(0);
 		s1.setName("Anna");
 		s1.setSurname("Baran");
 		s1.setPesel("93451312354");
 		
 		Student s2 = new Student();
-		s2.setId(9L);
+		s2.setId(0);
 		s2.setName("Jerzy");
 		s2.setSurname("Kowalik");
 		s2.setPesel("93851212551");
 		
 		Student s3 = new Student();
-		s3.setId(10L);
+		s3.setId(0);
 		s3.setName("Alina");
 		s3.setSurname("Bêben");
 		s3.setPesel("91871612853");
@@ -100,57 +97,5 @@ public class Main {
 		Transaction transaction = session.beginTransaction();
 		session.save(uj);
 		transaction.commit();
-	}
-	
-	private School school() {
-		School uj = new School();
-		uj.setId(3L);
-		uj.setName("UJ");
-		uj.setAddress("ul. Go³êbia 24");
-		
-		SchoolClass hist = new SchoolClass();
-		hist.setId(4L);
-		hist.setProfile("historia");
-		hist.setCurrentYear(2);
-		hist.setStartYear(2015);
-		
-		SchoolClass biol = new SchoolClass();
-		biol.setId(5L);
-		biol.setProfile("biologia");
-		biol.setCurrentYear(4);
-		biol.setStartYear(2013);
-	
-		Student s1 = new Student();
-		s1.setId(8L);
-		s1.setName("Anna");
-		s1.setSurname("Baran");
-		s1.setPesel("93451312354");
-		
-		Student s2 = new Student();
-		s2.setId(9L);
-		s2.setName("Jerzy");
-		s2.setSurname("Kowalik");
-		s2.setPesel("93851212551");
-		
-		Student s3 = new Student();
-		s3.setId(10L);
-		s3.setName("Alina");
-		s3.setSurname("Bêben");
-		s3.setPesel("91871612853");
-		
-		Set<Student> histStudents = new HashSet<Student>();
-		histStudents.add(s1);
-		histStudents.add(s2);
-		hist.setStudents(histStudents);
-		
-		Set<Student> biolStudents = new HashSet<Student>();
-		biolStudents.add(s3);
-		biol.setStudents(biolStudents);
-		
-		Set<SchoolClass> ujClasses = new HashSet<SchoolClass>();
-		ujClasses.add(hist);
-		ujClasses.add(biol);
-		
-		return uj;
 	}
 }

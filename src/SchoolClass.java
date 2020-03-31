@@ -10,10 +10,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name="schoolClasses")
-public class SchoolClass implements java.io.Serializable {
+public class SchoolClass {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

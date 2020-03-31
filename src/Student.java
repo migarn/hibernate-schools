@@ -5,11 +5,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name="students")
 
-public class Student implements java.io.Serializable {
+public class Student {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
