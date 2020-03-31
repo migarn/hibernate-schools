@@ -15,6 +15,8 @@ public class Main {
 		main.printSchools();
 		main.addNewData();
 		main.close();
+		
+		// Po ponownym uruchomieniu metody addNewData() nowa szko³a (wraz z przypisanymi jej klasami i uczniami) zosta³a zapisana w bazie danych drugi pod nowym id.
 	}
 
 	public Main() {
